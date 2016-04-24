@@ -1,0 +1,11 @@
+ofxGui
+ofxNetwork
+ofxOpenCv
+ofxOsc
+ofxXmlSettings
+ofxCv
+ofxFaceTracker
+ofxJpegGlitch
+ofxJSON
+ofxNumpy
+ofxPubSubOsc

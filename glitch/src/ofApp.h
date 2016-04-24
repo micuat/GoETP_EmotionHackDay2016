@@ -9,8 +9,12 @@
 class ofApp : public ofBaseApp {
 public:
     void setup();
+    void setupImages(string, string);
     void update();
+    void updateDecision();
+    void updateGlitch();
     void draw();
+    void drawClassifier();
     void exit();
 
     void keyPressed(int key);
@@ -24,9 +28,7 @@ public:
     void gotMessage(ofMessage msg);
 
 private:
-    ofxJpegGlitch jpeg;
     ofVideoGrabber grabber;
-    ofShader shader;
 	ofxFaceTrackerThreaded tracker;
 	ExpressionClassifier classifier;
     bool classifierInited;
@@ -34,6 +36,9 @@ private:
     vector<ofImage> images;
     int imageIndex;
     int glitchCount;
+    enum GlitchType {NONE, JPEG, GRAY} glitchType;
+    ofxJpegGlitch jpeg;
+    ofShader shader;
     
     ofxPanel gui;
     ofxFloatSlider ratioThreshold;

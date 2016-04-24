@@ -1,7 +1,6 @@
 #pragma once
 
 #include "ofMain.h"
-#include "ofxOsc.h"
 #include "ofxJpegGlitch.h"
 #include "ofxCv.h"
 #include "ofxFaceTrackerThreaded.h"
@@ -25,15 +24,10 @@ public:
     void gotMessage(ofMessage msg);
 
 private:
-    int blinkCount;
-    int clenchCount;
-    ofxOscReceiver receiver;
     ofxJpegGlitch jpeg;
     ofVideoGrabber grabber;
     ofShader shader;
 	ofxFaceTrackerThreaded tracker;
-    float focusIndex;
-    
 	ExpressionClassifier classifier;
     bool classifierInited;
     

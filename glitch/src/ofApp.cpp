@@ -11,7 +11,8 @@ void ofApp::setup(){
     jpeg.setup(20, 40, 80);
     
     shader.load("shaders/shader.vert", "shaders/shader.frag");
-	
+
+    gui.setup();
     gui.add(ratioThreshold.setup( "ratio", 0.75f, 0, 1 ));
     
     setupImages("images", "png");
@@ -150,7 +151,7 @@ void ofApp::draw(){
     ofRect(0, 0, ofGetWidth(), ofGetHeight());
     
     shader.end();
-    
+
     gui.draw();
     drawClassifier();
 }

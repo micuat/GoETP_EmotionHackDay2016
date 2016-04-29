@@ -1,11 +1,7 @@
-ofxGui
-ofxNetwork
-ofxOpenCv
-ofxOsc
-ofxXmlSettings
 ofxCv
 ofxFaceTracker
+ofxGui
 ofxJpegGlitch
-ofxJSON
-ofxNumpy
+ofxOpenCv
+ofxOsc
 ofxPubSubOsc
